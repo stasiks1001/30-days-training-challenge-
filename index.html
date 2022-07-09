@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/86859c900c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Training Program</title>
   </head>
@@ -16,28 +20,184 @@
       <ul>
         <h1>Target:</h1>
         <ul>
-          <li>1000 pull ups</li>
-          <li>3000 push ups</li>
-          <li>1500 km bicycling</li>
-          <li>700 dips</li>
+          <li>630 pull ups</li>
+          <li>50 push ups</li>
+          <li>750 km bicycling</li>
+          <li>750 dips</li>
           <li>30 core trainings</li>
           <li>3000 squads</li>
+        </ul>
+
+        <h1 class="daily">Daily Target:</h1>
+        <ul>
+          <li>21 pull ups</li>
+          <li>50 push ups</li>
+          <li>25 km bicycling</li>
+          <li>25 dips</li>
+          <li>1 core trainings</li>
+          <li>100 squads</li>
         </ul>
       </ul>
 
       <div>
         <h1>LEFT:</h1>
         <ul>
+          <li>
+            Pull ups left:
+            <div class="counter">
+              <div class="counter-value"></div>
 
-            <li>Pull ups left: <p id="pullUps">1000</p><input type="button" value="Decrement" onclick="pullUpsSubtraction()"></li>
-            <li>Push ups left: <p id="pushUps">3000</p> <input type="button" value="Decrement" onclick="pushUpsSubtraction()"></li>
-            <li>Km bicycling left: <p id="bicycling">1500</p><input type="button" value="Decrement" onclick="kmBicycleSubtraction()"></li>
-            <li>Dips left: <p id="dips">700</p><input type="button" value="Decrement" onclick="dipsSubtraction()"></li>
-            <li>Core trainings left:<p id="core">30</p> <input type="button" value="Decrement" onclick="coreSubtraction()"></li>
-            <li>Squads left:<p id="squads">3000</p> <input type="button" value="Decrement" onclick="squadsSubtraction()"></li>
-           
+              <div class="counter-controls">
+                <button data-action="decrease">
+                  <span>Decrease</span>
+                </button>
+
+                <button data-action="increase">
+                  <span>Increase</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="save">
+              <button data-action="save">
+                <span>Save</span>
+              </button>
+              <button data-action="clear-save">
+                <span>Clear</span>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            Push ups left:
+            <div class="counter2">
+              <div class="counter-value2"></div>
+
+              <div class="counter-controls2">
+                <button data-action2="decrease2">
+                  <span>Decrease</span>
+                </button>
+
+                <button data-action2="increase2">
+                  <span>Increase</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="save2">
+              <button data-action2="save2">
+                <span>Save</span>
+              </button>
+              <button data-action2="clear-save2">
+                <span>Clear</span>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            Km bicycling left:
+            <div class="counter3">
+              <div class="counter-value3"></div>
+
+              <div class="counter-controls3">
+                <button data-action3="decrease3">
+                  <span>Decrease</span>
+                </button>
+
+                <button data-action3="increase3">
+                  <span>Increase</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="save3">
+              <button data-action3="save3">
+                <span>Save</span>
+              </button>
+              <button data-action3="clear-save3">
+                <span>Clear</span>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            Dips left:
+            <div class="counter4">
+              <div class="counter-value4"></div>
+
+              <div class="counter-controls4">
+                <button data-action4="decrease4">
+                  <span>Decrease</span>
+                </button>
+
+                <button data-action4="increase4">
+                  <span>Increase</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="save4">
+              <button data-action4="save4">
+                <span>Save</span>
+              </button>
+              <button data-action4="clear-save4">
+                <span>Clear</span>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            Core trainings left:
+            <div class="counter5">
+              <div class="counter-value5"></div>
+
+              <div class="counter-controls5">
+                <button data-action5="decrease5">
+                  <span>Decrease</span>
+                </button>
+
+                <button data-action5="increase5">
+                  <span>Increase</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="save5">
+              <button data-action5="save5">
+                <span>Save</span>
+              </button>
+              <button data-action5="clear-save5">
+                <span>Clear</span>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            Squads left:
+            <div class="counter6">
+              <div class="counter-value6"></div>
+
+              <div class="counter-controls6">
+                <button data-action6="decrease6">
+                  <span>Decrease</span>
+                </button>
+
+                <button data-action6="increase6">
+                  <span>Increase</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="save6">
+              <button data-action6="save6">
+                <span>Save</span>
+              </button>
+              <button data-action6="clear-save6">
+                <span>Clear</span>
+              </button>
+            </div>
+          </li>
         </ul>
-      
       </div>
     </section>
 
@@ -51,36 +211,64 @@
         <div>F</div>
         <div>S</div>
         <div>S</div>
-        <div>20 <input type="checkbox" /></div>
-        <div>21<input type="checkbox" /></div>
-        <div>22<input type="checkbox" /></div>
-        <div>23<input type="checkbox" /></div>
-        <div>24<input type="checkbox" /></div>
-        <div>25<input type="checkbox" /></div>
-        <div>26<input type="checkbox" /></div>
-        <div>27<input type="checkbox" /></div>
-        <div>28<input type="checkbox" /></div>
-        <div>29<input type="checkbox" /></div>
-        <div>30<input type="checkbox" /></div>
-        <div>1<input type="checkbox" /></div>
-        <div>2<input type="checkbox" /></div>
-        <div>3<input type="checkbox" /></div>
-        <div>4<input type="checkbox" /></div>
-        <div>5<input type="checkbox" /></div>
-        <div>6<input type="checkbox" /></div>
-        <div>7<input type="checkbox" /></div>
-        <div>8<input type="checkbox" /></div>
-        <div>9<input type="checkbox" /></div>
-        <div>10<input type="checkbox" /></div>
-        <div>11<input type="checkbox" /></div>
-        <div>12<input type="checkbox" /></div>
-        <div>13<input type="checkbox" /></div>
-        <div>14<input type="checkbox" /></div>
-        <div>15<input type="checkbox" /></div>
-        <div>16<input type="checkbox" /></div>
-        <div>17<input type="checkbox" /></div>
-        <div>18<input type="checkbox" /></div>
-        <div>19<input type="checkbox" /></div>
+        <div>9 <input type="checkbox" id="checkbox1" onClick="save1()" /></div>
+        <div>10<input type="checkbox" id="checkbox2" onClick="save2()" /></div>
+        <div>11<input type="checkbox" id="checkbox3" onClick="save3()" /></div>
+        <div>12<input type="checkbox" id="checkbox4" onClick="save4()" /></div>
+        <div>13<input type="checkbox" id="checkbox5" onClick="save5()" /></div>
+        <div>14<input type="checkbox" id="checkbox6" onClick="save6()" /></div>
+        <div>15<input type="checkbox" id="checkbox7" onClick="save7()" /></div>
+        <div>16<input type="checkbox" id="checkbox8" onClick="save8()" /></div>
+        <div>17<input type="checkbox" id="checkbox9" onClick="save9()" /></div>
+        <div>
+          18<input type="checkbox" id="checkbox10" onClick="save10()" />
+        </div>
+        <div>
+          19<input type="checkbox" id="checkbox11" onClick="save11()" />
+        </div>
+        <div>
+          20<input type="checkbox" id="checkbox12" onClick="save12()" />
+        </div>
+        <div>
+          21<input type="checkbox" id="checkbox13" onClick="save13()" />
+        </div>
+        <div>
+          22<input type="checkbox" id="checkbox14" onClick="save14()" />
+        </div>
+        <div>
+          23<input type="checkbox" id="checkbox15" onClick="save15()" />
+        </div>
+        <div>
+          24<input type="checkbox" id="checkbox16" onClick="save16()" />
+        </div>
+        <div>
+          25<input type="checkbox" id="checkbox17" onClick="save17()" />
+        </div>
+        <div>
+          26<input type="checkbox" id="checkbox18" onClick="save18()" />
+        </div>
+        <div>
+          27<input type="checkbox" id="checkbox19" onClick="save19()" />
+        </div>
+        <div>
+          28<input type="checkbox" id="checkbox20" onClick="save20()" />
+        </div>
+        <div>
+          29<input type="checkbox" id="checkbox21" onClick="save21()" />
+        </div>
+        <div>
+          30<input type="checkbox" id="checkbox22" onClick="save22()" />
+        </div>
+        <div>
+          31<input type="checkbox" id="checkbox23" onClick="save23()" />
+        </div>
+        <div>1<input type="checkbox" id="checkbox24" onClick="save24()" /></div>
+        <div>2<input type="checkbox" id="checkbox25" onClick="save25()" /></div>
+        <div>3<input type="checkbox" id="checkbox26" onClick="save26()" /></div>
+        <div>4<input type="checkbox" id="checkbox27" onClick="save27()" /></div>
+        <div>5<input type="checkbox" id="checkbox28" onClick="save28()" /></div>
+        <div>6<input type="checkbox" id="checkbox29" onClick="save29()" /></div>
+        <div>7<input type="checkbox" id="checkbox30" onClick="save30()" /></div>
       </div>
     </section>
 
@@ -93,48 +281,95 @@
         </div>
       </div>
     </section>
-    
+
     <h1 class="body-text">Body Transformation</h1>
 
     <div class="images">
-        <section >
-            <div>
-              <h4>Start</h4>
-              <img src="./sv1.38mb.jpg" alt="" />
-            </div>
-          </section>
-      
-          <section >
-            <div class="right">
-              <h4>Week - 1</h4>
-              <img src="./sv1.38mb.jpg" alt="" />
-            </div>
-          </section>
-          
-          <section >
-            <div>
-              <h4>Week - 2</h4>
-              <img src="./sv1.38mb.jpg" alt="" />
-            </div>
-          </section>
-          
-          <section>
-            <div class="right">
-              <h4>Week - 3</h4>
-              <img src="./sv1.38mb.jpg" alt="" />
-            </div>
-          </section>
-      
-          <section>
-            <div>
-              <h4>Final</h4>
-              <img src="./sv1.38mb.jpg" alt="" />
-            </div>
-          </section>
-      
-          <script src="./app.js"></script>
+      <section>
+        <div>
+          <h4>Start</h4>
+          <img src="./20220620_153408.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div class="right">
+          <h4>Week - 1</h4>
+          <img src="./sv1.38mb.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h4>Week - 2</h4>
+          <img src="./sv1.38mb.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div class="right">
+          <h4>Week - 3</h4>
+          <img src="./sv1.38mb.jpg" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h4>Final</h4>
+          <img src="./sv1.38mb.jpg" alt="" />
+        </div>
+      </section>
+
+      <script src="./app.js"></script>
     </div>
-    
-   
+
+    <footer>
+      <div class="contacts">
+        <ul>
+          <i class="fa-solid fa-envelope"></i>
+          stanislavivanovwebdev@gmail.com
+        </ul>
+        <ul>
+          <i class="fa-solid fa-phone"></i>
+          +4915901256717
+        </ul>
+        <ul>
+          <i class="fa-solid fa-location-dot"></i>
+          Spohrstrasse 5; 04103 ; Leipzig
+        </ul>
+        <ul>
+          <i class="fa-brands fa-facebook"></i>
+          Facebook
+        </ul>
+        <ul>
+          <i class="fa-brands fa-github"></i>
+          Github
+        </ul>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d319032.3844074259!2d12.376321!3d51.33981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f823f6f829ad%3A0xdb29a74d67672797!2sZentrum%2C%20Leipzig!5e0!3m2!1sen!2sde!4v1657355251031!5m2!1sen!2sde"
+          width="400"
+          height="300"
+          style="border-radius: 10px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="footer-form">
+        <form>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" value="John" />
+
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" value="Smith" />
+
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
